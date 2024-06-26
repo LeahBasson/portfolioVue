@@ -1,0 +1,134 @@
+/*Bootstrap icon*/
+
+/*Universal selectors*/
+/*App*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --primary: #5a639c;
+  --accent: #45474b;
+  --bg: #f5f7f8;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: var(--primary);
+}
+
+:is(.wrapper) {
+  display: grid;
+  grid-template-rows: auto minmax(100dvh, 100%) auto;
+}
+
+/*Universal selectors*/
+img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.max-height {
+  height: 100vh;
+
+  & h2{
+    margin-top: 4rem;
+    text-align: center;
+  }
+}
+
+.card{
+    width: 18rem;
+}
+
+/*landing page*/
+.landing-title {
+  font-family: "Kode Mono", sans-serif;
+  font-size: 3.4rem;
+}
+
+.landing-text {
+  text-align: center;
+}
+
+img[alt="landing-img"] {
+  width: 15rem;
+  border-radius: 100%;
+  margin: auto;
+}
+
+@media (width < 426px) {
+  #landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .landing-title {
+    margin: 5rem auto 1rem;
+  }
+
+  img[alt="landing-img"] {
+    width: 13rem;
+  }
+
+  .landing-text {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 426px) {
+  #landing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+    text-align: center;
+
+    & .landing-title {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+  }
+
+  .landing-text{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+}
+/*landing page*/
+
+/*Custom variables*/
+
+/*logo*/
+img[alt="logo"] {
+  width: 5rem;
+  border-radius: 100%;
+}
