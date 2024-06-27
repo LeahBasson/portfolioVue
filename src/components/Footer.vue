@@ -1,9 +1,12 @@
 <template>
-    <footer class="container-fluid text-center">
-      <div class="row">
-          <p class="lead">Leah's Portfolio &copy; <span>{{ cYear }}</span></p>
-      </div>
-    </footer>
+    <footer class="container-fluid">
+        <div class="row">
+            <p class="lead text-white">
+                <span class="shadow">Leah's Portfolio</span>
+                <span>&copy; 2024</span>
+            </p>
+        </div>
+      </footer>
   </template>
   
   <script>

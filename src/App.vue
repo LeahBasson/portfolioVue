@@ -16,17 +16,12 @@ import FooterComp from '@/components/Footer.vue'
 export default {
   components: {
     NavComp,
-    FooterComp
-  },
-  computed: {
-    jobTitle(){
-      return this.$store.state.jobTitle
-    }
-  },
+    FooterComp,
+  }
 
 }
 </script>
 
-<style>
-
+<style src="./assets/style.css">
 </style>
+
