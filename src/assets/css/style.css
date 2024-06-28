@@ -138,8 +138,8 @@ section {
 }
 
 .stars div{
-  width: 50px;
-  height: 50px;
+  width: 1rem;
+  height: 1rem;
   margin: 0 4px;
   box-shadow: 0 14px 20px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
@@ -149,13 +149,13 @@ section {
 }
 
 .star i{
-  font-size: 2rem;
+  font-size: 0.5rem;
   z-index: 1;
 }
 
 div .star{
-  height: 50px;
-  width: 50px;
+  height: 1rem;
+  width: 1rem;
   border-radius: 20px;
   background: rgba(255,255,255.0.5);
   position: absolute;
