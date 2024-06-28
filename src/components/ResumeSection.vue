@@ -15,13 +15,23 @@
                
               </div>
               <div class="sectionP resText">
-                <h4 class="fw-bold"></h4>
-                <p class="fw-bold"></p>
-                <p class="fw-bold"></p>
-                <p class="fw-bold"></p>
+                <h4 class="fw-bold" v-if="subjects">
+                    {{ subjects[0].title}}
+                    <p class="mt-3">{{ subjects[0].subject1 }}</p>
+                    <p>{{ subjects[0].subject2 }}</p>
+                    <p>{{ subjects[0].subject3 }}</p>
+                </h4>
+                <Spinner v-else/>
+                <!-- <p class="fw-bold">{{ subjects[0]?.subject1 }}</p> -->
+                <!-- <p class="fw-bold">{{ subjects[0]?.subject2 }}</p>
+                <p class="fw-bold">{{ subjects[0]?.subject3 }}</p> -->
               </div>    
             </div>
             <Spinner v-else/>
+
+            <div class="centerBtn">
+                  <button class="btnResume mt-2"><a href="https://drive.google.com/uc?export=download&id=1exorNcqzUvKOmfzbMyCoTzGusuaPRkKM" id="download-link">Download my CV</a></button>
+                </div>
           </div>
     </div>
 </template>
@@ -32,11 +42,12 @@
   import { useStore } from 'vuex'
   const store = useStore()
   const resume = computed(() => store.state.resume)
-    
-
+  const subjects = computed(() => store.state.subjects)
+  
   onMounted(() => {
     setTimeout(()=>{
-      store.dispatch('fetchResume')
+      store.dispatch('fetchResume'),
+      store.dispatch('fetchSubject')
     }, 1000)
   })
 </script>

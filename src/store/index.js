@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 import Swal from 'sweetalert2/dist/sweetalert2' 
-const portfolioURL = 'https://leahbasson.github.io/vueProject/data/'
+const portfolioURL = 'https://leahbasson.github.io/portfolioData/data/'
 
 export default createStore({
   state: {
@@ -25,8 +25,8 @@ export default createStore({
     setResume(state, value) { 
       state.resume = value
     },
-    setExperience(state, value) { 
-      state.experiences = value
+    setSubject(state, value) { 
+      state.subjects = value
     },
     setSkills(state, value) { 
       state.skills = value
