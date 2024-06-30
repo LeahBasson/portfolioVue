@@ -373,7 +373,7 @@ img[alt='leah']{
 }
 
 .Greeting{
-  width: 48vw;
+  width: 45vw;
   background-color: transparent;
   order: 1;
   text-align: start;
@@ -534,6 +534,7 @@ color: var(--alternative);
 
 #skills h4{
   color: var(--alternative);
+  margin-bottom: 1rem;
 }
 
 #skills span{
@@ -542,7 +543,8 @@ color: var(--alternative);
 
 #skills p{
   font-size: 18px;
-  color: var(--secondary)
+  color: var(--secondary);
+  margin-bottom: 2.2rem;
 }
 
 /* Media query */

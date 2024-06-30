@@ -38,8 +38,7 @@
   export default {
       name: "NavComp"
   }
+
   </script>
   
-  <style>
   
-  </style>
