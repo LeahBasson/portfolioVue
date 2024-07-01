@@ -30,7 +30,7 @@
             <Spinner v-else/>
 
             <div class="centerBtn">
-                  <button class="btnResume mt-2"><a href="https://drive.google.com/uc?export=download&id=1exorNcqzUvKOmfzbMyCoTzGusuaPRkKM" id="download-link">Download my CV</a></button>
+                  <button class="btnResume mt-2"><a  href="https://drive.google.com/uc?export=download&id=1hlzWUU4luPbO_ptpqSxozBAJK0YiVQn3" id="download-link">Download my CV</a></button>
                 </div>
           </div>
     </div>

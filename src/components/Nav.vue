@@ -37,8 +37,13 @@
   <script>
   export default {
       name: "NavComp"
+
+      
   }
 
+  
+
+  
   </script>
   
   

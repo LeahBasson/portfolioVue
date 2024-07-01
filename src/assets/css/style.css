@@ -436,6 +436,18 @@ img[alt='leah']{
   font-family: "Montserrat", sans-serif;
 }
 
+nav a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: border-bottom 0.3s;
+}
+
+nav a.active {
+  border-bottom: 3px solid yellow;
+}
+
 /* About Section */
 #about{
   height: auto;
